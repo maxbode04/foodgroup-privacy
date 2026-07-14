@@ -37,7 +37,7 @@
 <body>
 
 <h1>Food Group — Privacy Policy</h1>
-<p class="meta">Last updated: 2026-05-26</p>
+<p class="meta">Last updated: 2026-07-14</p>
 
 <p>
 Food Group is built and operated by <strong>Maximilien Bode</strong> ("we", "us") in Sydney,
@@ -46,9 +46,10 @@ Australia. This policy explains what data the app handles and your rights over i
 
 <div class="tldr">
 <strong>TL;DR.</strong> Food Group runs entirely on your iPhone. We do not collect, send, or
-store your personal data anywhere outside of your own device. What you enter — what you
-eat, your weight, your goals — never leaves your iPhone unless you explicitly export or
-share it.
+store your personal data anywhere we can see it. What you enter — what you eat, your
+weight, your goals — stays on your iPhone, syncs only to <em>your own</em> private iCloud
+(if your phone is signed in), and never reaches us or any third party unless you
+explicitly export or share it.
 </div>
 
 <h2>What data the app processes</h2>
@@ -58,6 +59,7 @@ share it.
   <li>Your goals: target weight, weekly pace, daily macro and micronutrient targets</li>
   <li>Your food logs: which foods you ate, when, and how much</li>
   <li>Your custom foods, scanned barcodes, and recipes</li>
+  <li>Your water, alcohol, caffeine and supplement logs (all optional trackers)</li>
   <li>Your weight entries over time</li>
   <li>Your app preferences: theme, reminder times</li>
 </ul>
@@ -88,15 +90,30 @@ nothing personal:
     announcements (such as beta or release notices). This is an anonymous request with no
     identifiers attached.</li>
 </ul>
-<p>
-The app can read energy data (active and resting) from Apple's Health app to estimate your
-daily energy expenditure. This is read-only — the app writes nothing back to Health — and
-the data stays on your device. Apple controls this access and you can revoke it at any time.
-</p>
-<p>Planned for a future version:</p>
 <ul>
-  <li>Cloud sync via Apple iCloud / CloudKit — encrypted and kept within your own Apple ID.
-    Apple controls it and you can disable it.</li>
+  <li><strong>Recipe import:</strong> if you paste a web address to import a recipe, the app
+    fetches that page you chose. Nothing about you is attached to the request.</li>
+</ul>
+
+<h2>Apple Health</h2>
+<p>
+With your permission, Food Group can read energy and step data from Apple's Health app to
+estimate your daily energy expenditure, and can write back what you log — food energy and
+nutrients, water, and supplement doses — so your Health records stay complete. Each
+direction needs its own permission, everything stays within Apple's Health framework on
+your device, and you can revoke access at any time in the Health app.
+</p>
+
+<h2>iCloud sync &amp; backups</h2>
+<ul>
+  <li><strong>iCloud sync:</strong> if your iPhone is signed in to iCloud, your Food Group
+    data syncs to your own <em>private</em> iCloud database (Apple CloudKit) so it survives
+    a lost or new phone. It is encrypted in transit and at rest, lives entirely inside your
+    Apple ID, and is not visible to us or anyone else. Not signed in to iCloud? The app
+    simply works on-device. Settings → Privacy &amp; data shows the current sync status.</li>
+  <li><strong>Automatic backups:</strong> the app also saves a weekly backup file on your
+    device (visible in the Files app under Food Group). It never leaves your phone unless
+    you share it yourself.</li>
 </ul>
 
 <h2>In-app purchases</h2>
